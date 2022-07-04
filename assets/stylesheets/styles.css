@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap");
+:root {
+  --white: #dff9fb;
+  --black: #2c3e50;
+  --green: #85ffbd;
+  --yellow: #fffb7d;
+  --red: #ee5253;
+}
+
+html {
+  display: grid;
+  min-height: 100vh;
+}
+
+body {
+  text-align: center;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  color: var(--black);
+  font-family: "Josefin Sans", sans-serif;
+  margin: auto;
+}
+
+.brand-name {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.hero-txt {
+  font-size: 1.5rem;
+}
+
+.form-link {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 600;
+}
+
+.form {
+  background-color: inherit;
+  z-index: 1;
+  padding: 20px;
+  border: 2px solid var(--black);
+  border-radius: 10px;
+  animation: fadeIn 400ms ease-in;
+}
+
+.close-btn {
+  max-width: 35px;
+  max-height: 35px;
+  position: relative;
+  left: 225px;
+  cursor: pointer;
+}
+
+#svg {
+  display: none;
+}
+
+.privacy-notice {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 10px auto;
+  width: 400px;
+  padding: 20px;
+  border: 2px solid var(--red);
+  box-shadow: 5px 5px var(--red);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.dob,
+.lucky-num {
+  margin: 40px 0;
+}
+
+.dob__heading,
+.lucky-num__heading {
+  font-size: 1.5rem;
+}
+
+.dob__input,
+.lucky-num__input {
+  width: 300px;
+  margin: 20px;
+  font-size: 1.5rem;
+  border: 2px solid var(--black);
+  border-radius: 10px;
+  text-align: center;
+  font-family: inherit;
+  color: inherit;
+  background-color: var(--white);
+  outline: none;
+  padding: 10px;
+}
+
+.lucky-num__input {
+  margin-bottom: 0;
+}
+
+.check-btn {
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 2px solid var(--black);
+  border-radius: 10px;
+  background-color: var(--yellow);
+  transition: background-color 350ms;
+  font-family: inherit;
+  margin-bottom: 20px;
+}
+
+.check-btn:hover {
+  background-color: var(--green);
+}
+
+.footer {
+  position: relative;
+}
+
+.footer__list {
+  padding-left: 0;
+}
+
+.footer__list li {
+  display: inline;
+  margin: 5px;
+}
+
+.party-popper-left {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  animation: fadeIn 500ms ease-in;
+}
+
+.party-popper-right {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: rotateY(180deg);
+  animation: fadeIn 500ms ease-in;
+}
+
+.congrats,
+.unlucky,
+.error {
+  animation: fadeIn 500ms ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
